@@ -14,8 +14,8 @@ st.markdown("<h1 style='text-align: center;'>Hardware BOM Comparison Tool</h1>",
 
 
 # Upload the Excel files
-file1 = st.file_uploader("Upload the first BOM file", type=["xlsx"])
-file2 = st.file_uploader("Upload the second BOM file", type=["xlsx"])
+file1 = st.file_uploader("Upload the 1st BOM file", type=["xlsx"])
+file2 = st.file_uploader("Upload the 2nd BOM file", type=["xlsx"])
 
 if file1 and file2:
     df1 = pd.read_excel(file1)
@@ -30,9 +30,9 @@ if file1 and file2:
 
     # Display the results
     st.write("## Comparison Results")
-    st.write("### Rows added in the second file:")
+    st.write("### Changes Detected in the 1st File:")
     st.dataframe(df_added)
-    st.write("### Rows removed from the first file:")
+    st.write("### Changes Detected in the 2nd File:")
     st.dataframe(df_removed)
     # st.write("### Rows changed between files:")
     # st.dataframe(df_changed)
