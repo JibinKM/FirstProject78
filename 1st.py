@@ -7,7 +7,7 @@ import plotly.express as px
 #st.image('C:\Users\Jibin Mathai\PycharmProjects\FirstProject\.venv', use_column_width=True)
 
 # Your Streamlit app code follows
-st.image(r'C:\Users\Jibin Mathai\PycharmProjects\FirstProject\.venv\logo.png', use_column_width=True)
+st.image(r'logo.png', use_column_width=True)
 
 # Center-align the title using HTML
 st.markdown("<h1 style='text-align: center;'>Hardware BOM Comparison Tool</h1>", unsafe_allow_html=True)
